@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 1. Load image and create a circular mask (The "Stencil")
-img = cv2.imread('image.jpg')
+img = cv2.imread('Imge.png')
 mask = np.zeros(img.shape[:2], dtype="uint8")
 cv2.circle(mask, (150, 150), 100, 255, -1)
 
