@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this educational material, please cite it as follows."
+authors:
+  - family-names: "Mamade"
+    given-names: "Bayisa Kune"
+title: "The Anatomy of a Mask: A Pedagogical Approach to Digital Image Processing"
+version: 1.0.0
+date-released: 2024-05-20
+url: "https://github.com"
+abstract: >-
+  An educational module exploring the concept of image masking through 
+  historical metaphors, binary logic, and modern computer vision techniques.
+keywords:
+  - digital image processing
+  - masking
+  - opencv
+  - education
+license: MIT
