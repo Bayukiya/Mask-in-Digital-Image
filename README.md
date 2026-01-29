@@ -2,6 +2,7 @@
 > **From Darkrooms to Deep Learning — Understanding the "Logic of Sight" in Digital Image Processing.**
 ### 📊 Demo Result
 ![Image Masking Results](./masking_results.png)
+*Source: [Unsplash](https://unsplash.com/photos/a-group-of-wild-dogs-standing-next-to-each-other-pfb70hShQto)*
 *Output generated from the Python implementation below.*
 ---
 
