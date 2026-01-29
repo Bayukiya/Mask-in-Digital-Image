@@ -1,6 +1,8 @@
 # 🎭 Module: The Anatomy of a Mask 
 > **From Darkrooms to Deep Learning — Understanding the "Logic of Sight" in Digital Image Processing.**
-
+### 📊 Demo Result
+![Image Masking Results](./masking_results.png)
+*Output generated from the Python implementation below.*
 ---
 
 ### I. The Historical Hook (Introduction: The Top Bun)
@@ -29,17 +31,24 @@ Therefore, the complex visual act of isolating an object is, at its core, nothin
 Not all digital masks are created equal, and choosing the right "tier" of masking depends entirely on the complexity of the subject matter. For high-contrast objects like QR codes or sharp silhouettes, **Binary Masking** provides the necessary hard edges. However, the "fuzzy" real world—including elements like hair, smoke, or glass—requires **Alpha/Soft Masking**, which utilizes values between 0 and 1 to create transparency. At the highest level, **Semantic Masking** leverages Artificial Intelligence to identify objects automatically. 
 
 #### 🚀 Quick Start: Python Implementation
-The following implementation demonstrates the "Binary" approach using the [OpenCV Library](https://docs.opencv.org):
+This implementation uses the [Pillow Library] (https://python-pillow.org) to handle modern formats like AVIF and [OpenCV] (https://opencv.org) for processing. 
 
 ```python
 import cv2
 import numpy as np
+from PIL import Image # You need this for AVIF
 import matplotlib.pyplot as plt
+import pillow_avif
 
 # Load and prepare images
 path = 'wild_dogs.avif'
-img = cv2.imread(path)
-img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+pil_img = Image.open(path).convert('RGB')
+
+# Convert Pillow image to a numpy array (OpenCV format)
+img_rgb = np.array(pil_img)
+
+# Create the BGR and Gray versions OpenCV needs for masking
+img = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2BGR)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # --- 1. Geometric Mask (The "Stencil") ---
@@ -79,7 +88,7 @@ for i in range(len(images)):
 plt.tight_layout()
 plt.show()
 ```
-Wild Dogs (foxes) Source: [Unsplash](https://unsplash.com/photos/a-group-of-wild-dogs-standing-next-to-each-other-pfb70hShQto)
+**One last check:** Since you are using `wild_dogs.avif`, did you successfully install the **pillow-avif-plugin** on your system to generate the `masking_results.png`?
 
 
 ### IV. The Expert Nuance (The Body: Meat & Fillings)
