@@ -79,8 +79,7 @@ for i in range(len(images)):
 plt.tight_layout()
 plt.show()
 ```
-![Wild Dogs (foxs)](wild-dogs.jpg)
-*Source: (https://unsplash.com/photos/a-group-of-wild-dogs-standing-next-to-each-other-pfb70hShQto)*
+Wild Dogs (foxes) Source: [Unsplash](https://unsplash.com/photos/a-group-of-wild-dogs-standing-next-to-each-other-pfb70hShQto)
 
 
 ### IV. The Expert Nuance (The Body: Meat & Fillings)
