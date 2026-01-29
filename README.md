@@ -28,8 +28,8 @@ Therefore, the complex visual act of isolating an object is, at its core, nothin
 
 ---
 
-### III. Hierarchy of Techniques (The Body: Meat & Fillings)
-Not all digital masks are created equal, and choosing the right "tier" of masking depends entirely on the complexity of the subject matter. For high-contrast objects like QR codes or sharp silhouettes, **Binary Masking** provides the necessary hard edges. However, the "fuzzy" real world—including elements like hair, smoke, or glass—requires **Alpha/Soft Masking**, which utilizes values between 0 and 1 to create transparency. At the highest level, **Semantic Masking** leverages Artificial Intelligence to identify objects automatically. 
+### III. Hierarchy of Techniques (Updated Paragraph)
+Not all digital masks are created equal, and choosing the right technique depends entirely on whether you are targeting a specific shape or a specific type of visual data. Geometric Masking is the most basic tier, acting as a manual "stencil" (like a circle or rectangle) to isolate a fixed region of interest. However, real-world complexity often requires "Content-Aware" techniques, such as Color-Based (HSV) Masking for chroma-keying specific hues, or Intensity-Based (Threshold) Masking to isolate objects based on their brightness. At the highest level, these methods can be combined or "softened" with Gaussian gradients to create seamless, professional transitions. Understanding this hierarchy allows a developer to move from rigid, manual crops to dynamic, data-driven segmentations.
 
 #### 🚀 Quick Start: Python Implementation
 This implementation uses the [Pillow Library] (https://python-pillow.org) to handle modern formats like AVIF and [OpenCV] (https://opencv.org) for processing. 
