@@ -37,7 +37,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load and prepare images
-path = '/home/viplab/Desktop/gbcbiblegroup_photo.jpg'
+path = 'wild_dogs.jpg'
 img = cv2.imread(path)
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -79,6 +79,8 @@ for i in range(len(images)):
 plt.tight_layout()
 plt.show()
 ```
+![Wild Dogs (foxs)](wild-dogs.jpg)
+*Source: (https://unsplash.com/photos/a-group-of-wild-dogs-standing-next-to-each-other-pfb70hShQto)*
 
 
 ### IV. The Expert Nuance (The Body: Meat & Fillings)
