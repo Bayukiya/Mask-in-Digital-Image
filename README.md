@@ -37,7 +37,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load and prepare images
-path = 'wild_dogs.jpg'
+path = 'wild_dogs.avif'
 img = cv2.imread(path)
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
